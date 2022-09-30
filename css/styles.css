@@ -1,8 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap");
+header {
+  position: relative; }
+
+#navbarNav {
+  margin-right: 5rem; }
+
+.navbar-brand {
+  margin-left: 3rem; }
+
 #particles-js {
-  height: 100vh;
+  height: 150vh;
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: -1; }
+
+main {
+  color: #f2e374;
+  font-family: 'Noto Sans Mono', sans-serif;
+  text-align: center; }
+
+.About_Me {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  height: 70vh;
+  width: 80%; }
+
+.card {
+  margin-left: auto;
+  margin-right: auto; }
+  .card img {
+    height: 180px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto; }
+
+#carouselExampleControls {
+  width: 50%; }
 
 /*!
    * Bootstrap  v5.2.1 (https://getbootstrap.com/)
@@ -1409,13 +1444,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #e2e3e5;
-  --bs-table-border-color: #cbccce;
-  --bs-table-striped-bg: #d7d8da;
+  --bs-table-bg: rgba(255, 255, 255, 0.8);
+  --bs-table-border-color: rgba(219, 219, 219, 0.82);
+  --bs-table-striped-bg: rgba(236, 236, 236, 0.81);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cbccce;
+  --bs-table-active-bg: rgba(219, 219, 219, 0.82);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-bg: rgba(227, 227, 227, 0.815);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color); }

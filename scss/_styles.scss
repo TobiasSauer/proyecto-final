@@ -1,17 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
 @import "./varialbles";
 @import "./mixins";
 @import "./header";
 @import "./main";
 @import "./footer";
- 
-$primary: #1e1b1c;
-$danger: #ff4136;
-
-
-$theme-colors: (
-  "primary": $primary,
-  "danger": $danger
-);
-
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 

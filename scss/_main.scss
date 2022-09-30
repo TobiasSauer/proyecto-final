@@ -1,6 +1,32 @@
 #particles-js{
-    height: 100vh;
+    height: 150vh;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: -1;
+}
+main{
+    color: #f2e374;
+    font-family: 'Noto Sans Mono', sans-serif;
+    text-align: center;
+}
+.About_Me{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 70vh;
+    width: 80%;
+}
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    img{
+        height: 180px;
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+#carouselExampleControls{
+    width: 50%;
 }

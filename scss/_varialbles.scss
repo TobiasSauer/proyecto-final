@@ -1,3 +1,10 @@
 $primary: #1e1b1c;
+$secondary: rgba(255, 255, 255, 0);
+$danger: #ff4136;
 
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
 
