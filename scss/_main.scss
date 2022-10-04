@@ -1,32 +1,234 @@
-#particles-js{
-    height: 150vh;
+#particles-js {
+    height: 270vh;
     width: 100%;
     position: absolute;
     z-index: -1;
 }
-main{
+
+main {
     color: #f2e374;
     font-family: 'Noto Sans Mono', sans-serif;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 0.9fr 0.5fr;
+    grid-template-areas: "img_inicio inicio"
+        "about_me about_me"
+        "diseño carrusel"
+        "barras_carga barras_carga";
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .inicio {
+        grid-area: inicio;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: start;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        h1 {
+            font-weight: bold;
+        }
+
+        h5 {
+            font-weight: bold;
+            margin: 1rem;
+        }
+    }
+
+    .img_inicio {
+        grid-area: img_inicio;
+        margin: auto auto;
+        height: 270px;
+        width: 300px;
+    }
 }
-.About_Me{
+
+.animacion {
+    animation-duration: 1.2s;
+}
+
+.About_Me {
+    grid-area: about_me;
+    text-align: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
     height: 70vh;
     width: 80%;
+
+    h2 {
+        font-weight: bold;
+    }
+
+    h3 {
+        font-weight: bold;
+        margin-top: 4rem;
+    }
 }
-.card{
+
+.card {
     margin-left: auto;
     margin-right: auto;
-    img{
+
+    img {
         height: 180px;
         width: 180px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
-#carouselExampleControls{
-    width: 50%;
+
+#carouselExampleControls {
+    grid-area: carrusel;
+    height: 50%;
+}
+
+.diseño {
+    grid-area: diseño;
+    text-align: center;
+    height: 50%;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.barras_carga {
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: barras_carga;
+    opacity: 0;
+    border: #f2e374 solid 2px;
+    border-radius: 2rem;
+    height: 50vh;
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+    .div_section {
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.barra_progreso {
+    height: 10px;
+    width: 80%;
+    background-color: #3b3638;
+    overflow: hidden;
+    border-radius: 20px;
+
+    .progreso {
+        height: 100%;
+        width: 70%;
+        background-color: #f2e374;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .progreso1 {
+        height: 100%;
+        width: 50%;
+        background-color: #f2e374;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .progreso2 {
+        height: 100%;
+        width: 65%;
+        background-color: #f2e374;
+        display: block;
+        border-radius: 20px;
+    }
+}
+.main_contacto{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.form_style{
+    margin-top: 10rem;
+    height: 90vh;
+    width: 150vh;
+    border: #f2e374 2px solid;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    #particles-js {
+        height: 300vh;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .inicio {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #carouselExampleControls {
+        margin-top: 5.5rem;
+    }
+    .diseño {
+        margin-top: 6rem;
+    }
+    .barras_carga {
+        margin-top: 6rem;
+    }
+    .form_style{
+        height: 70vh;
+        width: 85vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #particles-js {
+        height: 330vh;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .inicio {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .About_Me {
+        h3{
+            margin-bottom: 10rem;
+        }
+    }
+    #carouselExampleControls {
+        margin-top: 12rem;
+    }
+    .diseño {
+        margin-top: 6rem;
+    }
+    .barras_carga {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+    .form_style{
+        height: 70vh;
+        width: 75vh;
+    }
 }
